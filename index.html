@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c0a08">
+<meta name="description" content="ANK-YUDH — jodo, socho, jeeto. 4096 tak pahucho!">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>ANK-YUDH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splashScreen" class="splash-screen">
+  <div class="splash-content">
+    <div class="splash-swords">⚔️</div>
+    <img src="icon-512.png" alt="ANK-YUDH icon" class="splash-logo">
+    <h2 class="splash-title">ANK YUDH</h2>
+    <p class="splash-created">Created by<br><b>GUPTA TECH STUDIO</b></p>
+    <p class="splash-flag">🇮🇳 Made in India</p>
+    <p class="splash-version">Version 1.0</p>
+  </div>
+</div>
+<main class="wrap">
+  <header>
+    <div>
+      <h1>⚔️ANK-YUDH⚔️</h1>
+      <div class="logo-tagline">JODO • SOCHO • JEETO</div>
+      <p>JOIN THE BLOCKS AND GET TO <b>4096!</b></p>
+    </div>
+    <div class="scores">
+      <div><span><b>YUDH SCORE</b></span><strong id="score">0</strong></div>
+      <div><span><b>BEST</b></span><strong id="best">0</strong></div>
+      <div>
+  <span>TIME LEFT</span>
+  <strong id="timer">10:00</strong>
+</div>
+    </div>
+  </header>
+  <div class="actions">
+    <button id="new">NAYA YUDH</button>
+    <button id="pauseBtn">YUDH VIRAM</button>
+    <button id="recordBtn" type="button">⚔️ YUDH RECORD</button>
+    <button id="soundBtn" aria-label="Toggle sound">🔊</button>
+  </div>
+ <div class="start-screen" id="startScreen">
+  <h2>YUDH KE LIYE TAYIYAR</h2>
+  <p>YUDH SHURU KARNE KE LIYE TIME CHUNIYE</p>
+
+  <div class="time-options">
+  <button class="time-btn" data-time="600">10 MIN</button>
+  <button class="time-btn" data-time="900">15 MIN</button>
+  <button class="time-btn" data-time="1200">20 MIN</button>
+</div>
+
+<button id="startGame">⚔️ YUDH SHURU</button>
+</div>
+  <div id="recordModal" class="record-modal hidden" aria-hidden="true">
+    <div class="record-panel">
+      <button id="closeRecord" class="record-close" type="button" aria-label="Close">×</button>
+      <h2>⚔️ YUDH RECORD</h2>
+      <p class="record-subtitle">2 se 4096 tak ka Yudh Record</p>
+      <div id="yudhRecord" class="yudh-record"></div>
+    </div>
+  </div>
+  <section class="game">
+    <div id="unlockBanner" class="unlock-banner"><span id="unlockText"></span></div>
+    <div id="board" class="board" aria-label="4096 board"></div>
+    <div id="overlay" class="overlay hidden">
+      <div><h2 id="title"></h2><p id="text"></p><button id="again">DOBARA YUDH</button></div>
+    </div>
+  </section>
+  <div class="dpad" aria-label="Movement controls">
+    <button id="btnUp" class="dpad-btn dpad-up" aria-label="Up">▲</button>
+    <button id="btnLeft" class="dpad-btn dpad-left" aria-label="Left">◀</button>
+    <button id="btnRight" class="dpad-btn dpad-right" aria-label="Right">▶</button>
+    <button id="btnDown" class="dpad-btn dpad-down" aria-label="Down">▼</button>
+  </div>
+  <section class="help">
+    <b><h2>How to play :-</h2></b>
+    <p>Use <b>arrow keys</b> or <b>swipe</b> on mobile. Matching tiles merge when they touch.</p>
+    <p><b>Tip:</b> Keep your biggest tile in one corner.</p>
+    <p>Reach <b>4096</b> to win the game!</p>
+
+
+
+    <p><b>DISCLAIMER:</b> This is a simple implementation of the 4096 game. The goal is to reach the 4096 tile by merging smaller tiles and this is made for only educational purposes.</p>
+    <p><b>Note:</b> (1)This game is not affiliated with or endorsed by the original creators of the 2048 game. The developers of this game have made significant modifications and improvements to the original concept.
+     <p> (2)The game is intended for personal use and entertainment purposes only.</p>
+     <p> (3)Please play responsibly and in moderation. Excessive gaming can have negative effects on your health and well-being.</p>
+     <p> (4)By playing this game, you agree to the terms and conditions set forth by the developers.</p>
+
+  </section>
+  <section class="about">
+    <h2>⚔️ ANK YUDH</h2>
+    <p class="about-tagline">A Mathematical Battle Game</p>
+    <ul class="about-list">
+      <li>👨‍💻 <b>Creator:</b> GUPTA TECH STUDIO </li>
+      <li>🎮 <b>Game:</b> Ank Yudh</li>
+      <li>🇮🇳 <b>Made in India</b></li>
+      <li>📅 <b>Version:</b> 1.1.0</li>
+    </ul>
+    <p class="about-credit">Created &amp; Developed by <b>GUPTA TECH STUDIO </b></p>
+    <p class="about-credit">💻 Designed &amp; Built by GUPTA TECH STUDIO </p>
+    <p class="about-copy">© 2026 GUPTA TECH STUDIO  • Made in India 🇮🇳</p>
+  </section>
+  <footer>Made with HTML, CSS &amp; JavaScript • <span id="year"></span></footer>
+  <footer>© 2026 ANK-YUDH. All rights reserved.</footer>
+  <footer>  Disclaimer: This game is for educational purposes only. The developers are not responsible for any misuse or harm caused by the game.</footer>
+  <footer>  If you experience any issues or have feedback, please contact the developers through the provided channels.</footer>
+  <footer>  Enjoy the game and have fun!</footer>
+  <footer><b>MADE BY GUPTA TECH STUDIO </b></footer>
+</main>
+<script src="script.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js").catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>
